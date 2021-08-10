@@ -2,7 +2,7 @@ package com.redbee.clase5.ejercicios;
 
 import java.util.List;
 
-public class MyBot {
+public class MyBotSaluda {
 
     public static String saluda(List<String> nombres) {
         var saludo = new StringBuilder("Hola, ");

@@ -1,6 +1,10 @@
 package com.redbee.clase5.ejercicios;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
  * Crea una calculadora que sea capaz de recibir una operación matemática como input en un string y devuelva el
@@ -25,6 +29,54 @@ import org.junit.jupiter.api.DisplayName;
  * llama a calcular("5-6") deberá devolver 1
  *
  */
-@DisplayName("Laboratorio para ejercicio de numeros romanos")
+@DisplayName("Laboratorio para ejercicio de calculadora")
 public class CalculadoraDeStringsLab {
+
+    @Test
+    @DisplayName("Test calculadora de strings - suma")
+    public void testCalculadoraDeStringsConSuma(){
+
+        //give: cocinar los datos
+        final var operationAsString = "";
+        final var expectedResult = 0;
+
+        //when: testeo el requerimiento
+        final var actualResult = CalculadoraStrings.calcular("");
+
+        //then: analizar el resultado
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    @DisplayName("Test calculadora de strings - imput.length() == 1")
+    public void testCalculadoraDeStringsConLongitud1(){
+
+        //give: cocinar los datos
+        final var operationAsString = "2";
+        final var expectedResult = 2;
+
+        //when: testeo el requerimiento
+        final var actualResult = CalculadoraStrings.calcular(operationAsString);
+
+        //then: analizar el resultado
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    @DisplayName("Test calculadora de strings - resta")
+    public void testCalculadoraDeStringsConResta(){
+
+        //give: cocinar los datos
+        final var operationAsString = "2-1";
+        final var expectedResult = 1;
+
+        //when: testeo el requerimiento
+        final var actualResult = CalculadoraStrings.calcular(operationAsString);
+
+        //then: analizar el resultado
+        assertEquals(expectedResult, actualResult);
+    }
+
+
+
 }

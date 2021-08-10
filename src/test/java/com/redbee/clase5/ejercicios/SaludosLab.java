@@ -37,7 +37,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -49,7 +49,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, colega";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(null);
+        final var saludoActual = MyBotSaluda.saluda(null);
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -62,7 +62,7 @@ public class SaludosLab {
         final var saludoEsperado = "¡HOLA, AIXA!";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -76,7 +76,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura y Aixa";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre1, nombre2));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre1, nombre2));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -88,7 +88,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, colega";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of());
+        final var saludoActual = MyBotSaluda.saluda(List.of());
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -102,7 +102,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura e Ignacio";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre1, nombre2));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre1, nombre2));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -116,7 +116,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura e Hilario";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre1, nombre2));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre1, nombre2));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -130,7 +130,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura e Yvone";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre1, nombre2));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre1, nombre2));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
@@ -145,7 +145,7 @@ public class SaludosLab {
         final var saludoEsperado = "Hola, Laura, Aixa y Diegui";
 
         //when: testeo el requerimiento
-        final var saludoActual = MyBot.saluda(List.of(nombre1, nombre2, nombre3));
+        final var saludoActual = MyBotSaluda.saluda(List.of(nombre1, nombre2, nombre3));
 
         //then: analizar el resultado
         Assertions.assertEquals(saludoEsperado, saludoActual);
